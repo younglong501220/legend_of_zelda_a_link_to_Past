@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .pixelated {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  .crt-scanlines {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.3) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+  }
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace, ui-monospace, system-ui;
+}
+
+.font-retro {
+  font-family: 'VT323', monospace, ui-monospace, system-ui;
+}
